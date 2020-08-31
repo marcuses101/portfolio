@@ -47,7 +47,7 @@ p{
     text-align:center;
 }
 
-img {
+#intro img {
     display: inline-block;
     width: 49%;
 }
@@ -58,6 +58,25 @@ section {
     box-shadow: 2px 2px var(--shadow-main);
     border-radius: 5px;
     margin: 10px;
+}
+
+.project {
+    display: inline-block;
+    width: 45%;
+    margin: 5px;
+
+}
+.project img {
+    display: block;
+    width: 100%;
+    margin: auto;
+    border-radius: 5px;
+}
+.project a{
+    display: block;
+    width: 90%;
+    margin: auto;
+    text-align: center;
 }
 
 h1, h2 {
@@ -79,36 +98,14 @@ h2 {
     text-align: center;
     color: var(--text2);
 }
-hr {
-    height: 5px;
-    width: 99%;
-    margin: auto;
-    border-radius: 3px;
-    background-color: var(--secondary);
-    border: 2px var(--secondary) solid;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    box-shadow: 2px 2px var(--shadow-main);
-}
 
-footer {
-
-}
-footer nav {
-    float: right;
-}
-footer div {
-    float: left;
+nav {
+    margin: 5px;
+    
 }
 
 .btn {
-    cursor: pointer;
-}
-
-a {
-    display: inline-block;
-    cursor: pointer;
-    color: var(--secondary);
+    cursor: pointer;    
     border: 2px solid var(--secondary);
     background-color: var(--main);
     border-radius: 5px;
@@ -116,19 +113,39 @@ a {
     padding: 3px;
     transition-duration: 25ms;
 }
+.btn:hover {
+    transform: scale(1.01)
+}
+.btn:active {
+    box-shadow: 1px 1px var(--shadow-main);
+    transform: translate(2px,2px)
+}
+
+a {
+    display: inline-block;
+    color: var(--secondary);
+}
 
 a:link{
-    box-shadow: 2px 2px var(--shadow-main)
+    color: var(--secondary);
 }
 a:visited{
     color: var(--shadow-main)
 }
 a:hover {
-    transform: scale(1.01)
-    
+    cursor: pointer;
+    color:  purple;
 }
 a:active{
-    box-shadow: 1px 1px var(--shadow-main);
-    transform: translate(2px,2px)
-    
+    color: black;
+}
+
+nav {
+    width: 90%;
+    margin: 5px auto;
+    display: flex;
+    justify-content: center;
+}
+nav a{
+    margin: 5px;
 }
