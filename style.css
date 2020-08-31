@@ -144,8 +144,10 @@ nav {
     width: 90%;
     margin: 5px auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 nav a{
     margin: 5px;
+    flex-flow: wrap;
 }
