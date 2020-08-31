@@ -3,9 +3,15 @@
 --secondary: #2b2d42;
 --shadow-main: #ef233c;
 --shadow-secondary: #b3b6d8;
-
-
 }
+
+html {
+    box-sizing: border-box;
+  }
+
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
 
 html{
     height: 100%;
@@ -15,7 +21,6 @@ body {
     height: 100%;
     background-color: var(--main);
     color: var(--text-secondary);
-
 }
     
 header{
@@ -28,10 +33,35 @@ footer, main {
     margin: auto;
     width: 90%;
 }
+article {
+    margin: auto;
+    display: inline-block;
+    width: 50%;
+}
+#intro {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+p{
+    text-align:center;
+}
 
-h1.title {
+img {
+    display: inline-block;
+    width: 49%;
+}
+
+section {
+    background-color: var(--main);
+    border: 3px solid var(--secondary);
+    box-shadow: 2px 2px var(--shadow-main);
+    border-radius: 5px;
+    margin: 10px;
+}
+
+h1, h2 {
     margin: 1px;
-    font-size: 50px;
     -webkit-text-fill-color: white;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
@@ -40,7 +70,12 @@ h1.title {
     font-family: 'Courier New', Courier, monospace;
     transition-duration: 100ms;
 }
+h1 {
+    font-size: 50px;
+}
+
 h2 {
+    font-size: 45px;
     text-align: center;
     color: var(--text2);
 }
@@ -57,19 +92,17 @@ hr {
 }
 
 footer {
-    margin: auto;
-    padding: 5px;
-    position: absolute;
-    bottom: 0;
-    left: 5%;
-    width: 90%;
-    height: 2.5rem;
+
 }
 footer nav {
     float: right;
 }
 footer div {
     float: left;
+}
+
+.btn {
+    cursor: pointer;
 }
 
 a {
