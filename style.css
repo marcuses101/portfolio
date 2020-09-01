@@ -127,7 +127,7 @@ ul, ol {
 }
 /* Button styles */
 
-.btn {
+button {
     cursor: pointer;    
     border: 2px solid var(--secondary);
     background-color: var(--main);
@@ -136,12 +136,15 @@ ul, ol {
     padding: 5px;
     transition-duration: 25ms;
 }
-.btn:hover {
+button:hover {
     transform: scale(1.01)
 }
-.btn:active {
+button:active {
     box-shadow: 1px 1px var(--shadow-main);
     transform: translate(2px,2px)
+}
+button:focus {
+    outline: none;
 }
 
 /* Link styles */
