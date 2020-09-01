@@ -1,90 +1,51 @@
-:root {
---main:#edf2f4;
---secondary: #2b2d42;
---shadow-main: #ef233c;
---shadow-secondary: #b3b6d8;
-}
+
+/* Border box fix*/
 
 html {
     box-sizing: border-box;
-  }
+}
 
 *, *:before, *:after {
     box-sizing: inherit;
-  }
-
-html{
-    height: 100%;
 }
+
+
+/* color variables to experiment with different palettes */
+
+:root {
+    --main:#edf2f4;
+    --secondary: #2b2d42;
+    --shadow-main: #ef233c;
+}
+
+
+
 body {
     font-family: Arial, Helvetica, sans-serif;
-    height: 100%;
     background-color: var(--main);
     color: var(--text-secondary);
 }
-    
-header{
+
+header, footer{
     background-color: var(--secondary);
     border-radius: 5px;
-    margin: auto;
+    margin: 10px auto;
     width: 99%;
 }
-footer, main {
+main {
     margin: auto;
     width: 90%;
 }
-article {
-    margin: auto;
-    display: inline-block;
-    width: 50%;
-}
-#intro {
-    display:flex;
-    align-items: center;
-    justify-content: center;
-}
-p{
-    text-align:center;
-}
 
-#intro img {
-    display: inline-block;
-    width: 49%;
-}
 
-section {
-    background-color: var(--main);
-    border: 3px solid var(--secondary);
-    box-shadow: 2px 2px var(--shadow-main);
-    border-radius: 5px;
-    margin: 10px;
-}
+/* headings style */
 
-.project {
-    display: inline-block;
-    width: 45%;
-    margin: 5px;
-
-}
-.project img {
-    display: block;
-    width: 100%;
-    margin: auto;
-    border-radius: 5px;
-}
-.project a{
-    display: block;
-    width: 90%;
-    margin: auto;
-    text-align: center;
-}
-
-h1, h2 {
-    margin: 1px;
+h1, h2, h3 {
+    margin: 3px;
     -webkit-text-fill-color: white;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
-    text-shadow: 1px 1.5px var(--shadow-main);
+    text-shadow: 2px 2px var(--shadow-main);
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     transition-duration: 100ms;
@@ -95,14 +56,76 @@ h1 {
 
 h2 {
     font-size: 45px;
+}
+h3 {
+    font-size: 40px;
+}
+h4 {
     text-align: center;
-    color: var(--text2);
 }
 
-nav {
-    margin: 5px;
-    
+/* Intro layout */
+
+#intro {
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
+
+#intro img {
+    display: inline-block;
+    width: 49%;
+}
+
+p { 
+    font-size: 18px;
+    text-align:center;
+}
+
+/* Section cards */
+
+section {
+    background-color: var(--main);
+    border: 3px solid var(--secondary);
+    box-shadow: 2px 2px var(--shadow-main);
+    border-radius: 5px;
+    margin: 10px;
+}
+
+article {
+    margin: auto;
+    display: inline-block;
+    width: 50%;
+}
+/* Project tiles */
+
+.project {
+    display: inline-block;
+    width: 45%;
+    margin: 5px;
+
+}
+.project img {
+    display: block;
+    width: 100%;
+    margin: 5px auto;
+    border-radius: 5px;
+}
+.project a{
+    display: block;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+/* Centered list */
+
+ul, ol {
+    display: table;
+    margin: 5px auto;
+    text-align: center;
+}
+/* Button styles */
 
 .btn {
     cursor: pointer;    
@@ -110,7 +133,7 @@ nav {
     background-color: var(--main);
     border-radius: 5px;
     box-shadow: 2px 2px var(--shadow-main);
-    padding: 3px;
+    padding: 5px;
     transition-duration: 25ms;
 }
 .btn:hover {
@@ -120,6 +143,8 @@ nav {
     box-shadow: 1px 1px var(--shadow-main);
     transform: translate(2px,2px)
 }
+
+/* Link styles */
 
 a {
     display: inline-block;
@@ -142,7 +167,8 @@ a:active{
 
 nav {
     width: 90%;
-    margin: 5px auto;
+    margin: auto;
+    padding: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -150,4 +176,12 @@ nav {
 nav a{
     margin: 5px;
     flex-flow: wrap;
+}
+hr {
+    height: 5px;
+    background-color: var(--secondary);
+    border: 1px solid var(--secondary);
+    border-radius: 5px;
+    box-shadow: 2px 2px var(--shadow-main);
+    width: 85%;
 }

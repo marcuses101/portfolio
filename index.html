@@ -9,17 +9,18 @@
     <meta name="description" content="Marcus Connolly - Web developer portfolio">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Marcus Connolly Developer</title>
 </head>
 
 <body>
 
     <header>
         <h1 class="title">Marcus Connolly</h1>
-        <h2>Full Stack Developer</h2>
+        <h3 class="title">Web Developer</h3>
     </header>
 
     <main>
+
         <section id="intro">
             <article>
                 <p>I'm Marcus. Developer by day, figure skating coach by night. Based out of Montreal, Quebec</p>
@@ -27,37 +28,60 @@
             </article>
             <img src="img/marcus.jpg" alt="Dashingly handsome man (winky face)">
         </section>
+
         <section id="aboutMe">
             <h2>About Me</h2>
             <p>I've been a figure skating coach for the past 15 years, and a figure skater since I could walk.</p>
             <p>Now my brain is ready for a new challenge. I'm diving into the world of web developement.</p>  
             <p>I look forward to working with you soon!</p> 
-        
-
         </section>
-        <section>
+
+        <section id="projects">
             <h2>Projects</h2>
-            <div class="project">
+            <article class="project"> <!--I don't think this is the appropriate use case of article tag-->
                 <a href="https://www.figureskating101.com" target="_blank"><img src="img/figure-skating-101.png"
                         alt="image of linked website interface">Figure Skating 101</a>
-            </div>
-            <div class="project">
+                </article>
+            <article class="project">
                 <a href="https://marcuses101.github.io/portfolio/"><img src="img/portfolio.png" alt="Picture of this website">This Website</a>
-            </div>
+            </article>
         </section>
-    </main>
 
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Google Sheets</li>
+            </ul>
+        </section>
+
+    <!-- Demontrating ordered list. I didn't want one on my portfolio page
+        <section id="favFoods">
+            <h2>Favorite Foods</h2>
+            <ol>
+                <li>Ruben sandwich</li>
+                <li>Pizza</li>
+                <li>Pork Wellington</li>
+                <li>Gyro</li>
+                <li>Sushi</li>
+            </ul>
+        </section>
+    -->
+    </main>
+<hr> <!--This <hr> is here to fit the assignment criteria. I don't think it's neccesary given my layout-->
     <footer>
-        <section id="contact">
-            <h2>Contact Info</h2>
+
+            <h2 class="title">Contact Info</h2>
             <nav>
                 <a class="btn" href="resume.pdf" target="_blank">Resume pdf</a>
-                <a class="btn" href="https://www.linkedin.com/in/marcus-connolly-8145631b1/"
+                <a class="btn" href="https://www.linkedin.com/in/marcus-connolly-web/"
                     target="_blank">LinkedIn</a>
                 <a class="btn" href="https://github.com/marcuses101/" target="_blank">GitHub</a>
                 <a class="btn" href="mailto:mnjconnolly@gmail.com" target="_blank">✉ mnjconnolly@gmail.com</a>
             </nav>
-        </section>
+
     </footer>
 
     <script src="script.js"></script>
