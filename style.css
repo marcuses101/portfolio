@@ -135,11 +135,6 @@ button {
     box-shadow: 2px 2px var(--shadow-main);
     padding: 5px;
     transition-duration: 25ms;
-}
-button:hover {
-    transform: scale(1.01)
-}
-button:active {
     box-shadow: 1px 1px var(--shadow-main);
     transform: translate(2px,2px)
 }
