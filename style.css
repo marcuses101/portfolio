@@ -127,20 +127,22 @@ ul, ol {
 }
 /* Button styles */
 
-button {
-    cursor: pointer;    
-    border: 2px solid var(--secondary);
-    background-color: var(--main);
-    border-radius: 5px;
-    box-shadow: 2px 2px var(--shadow-main);
-    padding: 5px;
-    transition-duration: 25ms;
-    box-shadow: 1px 1px var(--shadow-main);
-    transform: translate(2px,2px)
-}
-button:focus {
-    outline: none;
-}
+    .btn {
+        cursor: pointer;    
+        border: 2px solid var(--secondary);
+        background-color: var(--main);
+        border-radius: 5px;
+        box-shadow: 2px 2px var(--shadow-main);
+        padding: 5px;
+        transition-duration: 25ms;
+    }
+    .btn:hover {
+        transform: scale(1.01)
+    }
+    .btn:active {
+        box-shadow: 1px 1px var(--shadow-main);
+        transform: translate(2px,2px)
+    }
 
 /* Link styles */
 
