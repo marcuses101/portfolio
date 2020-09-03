@@ -41,7 +41,7 @@ main {
 
 h1, h2, h3 {
     margin: 3px;
-    -webkit-text-fill-color: white;
+    -webkit-text-fill-color: var(--main);
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
     text-shadow: 2px 2px var(--shadow-main);
@@ -55,6 +55,9 @@ h1 {
 
 h2 {
     font-size: 45px;
+}
+h2.title {
+    font-size: 40px;
 }
 h3 {
     font-size: 40px;
