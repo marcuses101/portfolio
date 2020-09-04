@@ -60,23 +60,27 @@ h2.title {
     font-size: 40px;
 }
 h3 {
+    width: 75%;
+    margin: 5px auto;
+    background-color: var(--secondary);
+    border-radius: 5px;
     font-size: 40px;
 }
 h4 {
     text-align: center;
 }
 
-/* Intro layout */
+/* flex */
 
-#intro {
-    display:flex;
-    align-items: center;
-    justify-content: center;
+.container{
+    display: flex;
 }
-
-#intro img {
-    display: inline-block;
-    width: 49%;
+.item {
+    margin: 10px;
+    flex: 1;
+}
+.align-vert {
+    align-self: center;
 }
 
 p { 
