@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         type="text/css">
     <link rel="stylesheet" href="style.css" type="text/css">
-    <link rel="icon" type="image/png" href="img/favicon.ico"/>
+    <link rel="icon" type="image/png" href="img/favicon.ico" />
     <meta name="keywords" content="HTML, CSS, JavaScript, Node">
     <meta name="description" content="Marcus Connolly - Web developer portfolio">
     <meta charset="UTF-8">
@@ -16,18 +16,19 @@
 <body>
 
     <header>
-        <h1 class="title">Marcus Connolly</h1>
-        <h2 class="title">Web Developer</h2>
+        <h1 class="title">Marcus <span class="hide-on-small">Connolly</span></h1>
+        <h2 class="title"><span class="hide-on-small">Web </span>Developer</h2>
     </header>
 
     <main>
 
         <section id="intro">
-            <h3 class="visually-hidden">Intro</h3> <!--Section heading for accessibility-->
+            <h3 class="visually-hidden">Intro</h3>
+            <!--Section heading for accessibility-->
 
             <div class="container">
                 <div class="item align-vert">
-                    <p>I'm Marcus. Developer by day, figure skating coach by night. Based out of Montreal, Quebec</p>
+                    <p>I'm Marcus. Developer by day, figure skating coach by night. Based out of Montreal, Quebec.</p>
                     <p>I like building tools and systems; Helping people focus on the parts of their jobs they love.</p>
                 </div>
                 <div class="item">
@@ -35,9 +36,9 @@
                 </div>
             </div>
 
-                
 
-            
+
+
         </section>
 
         <section id="aboutMe">
@@ -49,15 +50,29 @@
 
         <section id="projects">
             <h3>Projects</h3>
-            <article class="project">
-                <!--I don't think this is the appropriate use case of article tag-->
-                <a href="https://www.figureskating101.com" target="_blank" rel="noopener"><img src="img/figure-skating-101.png"
-                        alt="image of linked website interface" >Figure Skating 101</a>
-            </article>
-            <article class="project">
-                <a href="https://marcuses101.github.io/portfolio/"><img src="img/portfolio.png"
-                        alt="Picture of this website">This Website</a>
-            </article>
+            <div class="container">
+                <article class="project">
+                    <!--I don't think this is the appropriate use case of article tag-->
+                    <h4>
+                        <a href="https://www.figureskating101.com" target="_blank" rel="noopener">Figure Skating 101</a>
+                    </h4>
+                    <a href="https://www.figureskating101.com" target="_blank" rel="noopener">
+                        <img src="img/figure-skating-101.png" alt="image of linked website interface">
+                    </a>
+                    <p>Recreation of the Cumulative Point System used in competitive figure skating.</p>
+                    <p>Features intuitive controls and up-to-date score values</p>
+                    <p>(W.O.P.)</p>
+                </article>
+                <article class="project">
+                    <h4><a href="https://marcuses101.github.io/portfolio/">This Website</a></h4>
+                    <a href="https://marcuses101.github.io/portfolio/">
+                        <img src="img/portfolio.png" alt="Picture of this website">
+                    </a>
+                    <p>My personal developer portfolio</p>
+                    <p>Responsive mobile-first accessible design. SEO optimization. Clean layout.</p>
+                    <p>Fun mouse move box-shadow effect on title</p> 
+                </article>
+            </div>
         </section>
 
         <section id="skills">
@@ -77,9 +92,11 @@
         <h3 class="title">Contact Info</h3>
         <nav>
             <a class="btn" href="resume.pdf" target="_blank">Resume pdf</a>
-            <a class="btn" href="https://www.linkedin.com/in/marcus-connolly-web/" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn" href="https://www.linkedin.com/in/marcus-connolly-web/" target="_blank"
+                rel="noopener">LinkedIn</a>
             <a class="btn" href="https://github.com/marcuses101/" target="_blank" rel="noopener">GitHub</a>
-            <a class="btn" href="mailto:mnjconnolly@gmail.com" target="_blank" rel="noopener">✉ mnjconnolly@gmail.com</a>
+            <a class="btn" href="mailto:mnjconnolly@gmail.com" target="_blank" rel="noopener">✉
+                mnjconnolly@gmail.com</a>
         </nav>
 
     </footer>
