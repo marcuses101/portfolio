@@ -15,11 +15,12 @@
 </head>
 
 <body>
-    <span id="sidenav-tab" class="btn" onclick="toggleNav()">☰</span>
+
+    <span id="sidenav-tab" class="btn hide-on-large" onclick="toggleNav()">☰</span>
     <nav id="mySidenav" class="sidenav">
         <a href="#intro" class="btn" onclick="closeNav()">Intro</a>
         <a href="#aboutMe" class="btn" onclick="closeNav()">About</a>
-        <a href="#projects" class="btn"onclick="closeNav()">Projects</a>
+        <a href="#projects" class="btn" onclick="closeNav()">Projects</a>
         <a href="#skills" class="btn" onclick="closeNav()">Skills</a>
         <a href="#contact-info" class="btn" onclick="closeNav()">Contact</a>
     </nav>
@@ -27,6 +28,14 @@
     <header>
         <h1 class="title">Marcus <span class="hide-on-small">Connolly</span></h1>
         <h2 class="title"><span class="hide-on-small">Web </span>Developer</h2>
+
+        <nav class="hide-on-small">
+            <a href="#intro" class="btn">Intro</a>
+            <a href="#aboutMe" class="btn">About</a>
+            <a href="#projects" class="btn">Projects</a>
+            <a href="#skills" class="btn">Skills</a>
+            <a href="#contact-info" class="btn">Contact</a>
+        </nav>
     </header>
 
 
@@ -90,6 +99,7 @@
                     <p>(W.O.P.)</p>
                     <a href="https://github.com/marcuses101/figure-skating-101">Source Code</a>
                 </article>
+                <hr>
                 <article class="project">
                     <h4><a href="https://marcuses101.github.io/portfolio/">This Website</a></h4>
                     <a href="https://marcuses101.github.io/portfolio/" target="_blank" rel="noopener">
@@ -124,7 +134,7 @@
                         <input type="text" id="lname"><br>
                         <label for="email">Email:</label>
                         <input type="email" name="email" id="email"><br>
-                        <label for="inquire">Inquiry:</label>
+                        <label for="inquiry">Inquiry:</label>
                         <textarea name="inquiry" id="inquiry" rows="10"></textarea><br>
                         <input class="btn" type="submit" value="Submit">
                     </form>
