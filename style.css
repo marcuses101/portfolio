@@ -67,6 +67,8 @@ h3 {
     font-size: 40px;
 }
 h4 {
+    font-size: 1.75em;
+    margin: 5px auto;
     text-align: center;
 }
 
@@ -78,6 +80,7 @@ h4 {
 
 .container{
     display: flex;
+    flex-direction: column;
 }
 
 #intro .container {
@@ -204,6 +207,10 @@ hr {
 
     h3 {
         width: 60%;
+    }
+
+    .container {
+        flex-direction: row;
     }
           
     #intro .container {

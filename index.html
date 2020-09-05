@@ -43,9 +43,23 @@
 
         <section id="aboutMe">
             <h3>About Me</h3>
-            <p>I've been a figure skating coach for the past 15 years, and a figure skater since I could walk.</p>
-            <p>Now my brain is ready for a new challenge. I'm diving into the world of web development.</p>
-            <p>I look forward to working with you soon!</p>
+            <div class="container">
+                <div class="item">
+                    <p>I've been a figure skating coach for the past 15 years, and a figure skater since I could walk.</p>
+                    <p>Now my brain is ready for a new challenge. I'm diving into the world of web development.</p>
+                    <p>I look forward to working with you soon!</p>
+                </div>
+                <div class="item">
+                    <h4>Services Available:</h4>
+                    <ul>
+                        <li>Unique Website Design</li>
+                        <li>Full Stack Development</li>
+                        <li>Custom Web Applications</li>
+
+                    </ul>
+                </div>
+            </div>
+           
         </section>
 
         <section id="projects">
@@ -90,6 +104,17 @@
     <footer>
 
         <h3 class="title">Contact Info</h3>
+        <form action="">
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname">
+            <label for="lname" name="lname">Last Name:</label>
+            <input type="text" id="lname">
+            <label for="email"></label>
+            <input type="email" name="email" id="email">
+            <label for="inquire">Inquiry:</label>
+            <textarea name="inquiry" id="inquiry" cols="30" rows="10"></textarea>
+            <input type="submit" value="Submit">
+        </form>
         <nav>
             <a class="btn" href="resume.pdf" target="_blank">Resume pdf</a>
             <a class="btn" href="https://www.linkedin.com/in/marcus-connolly-web/" target="_blank"
