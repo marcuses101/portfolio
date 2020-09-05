@@ -2,6 +2,7 @@
 
 const titles = document.querySelectorAll(".title");
 const walk = 2;
+let navOpen = false;
 
 window.addEventListener("mousemove", handleMouseMove)
 function handleMouseMove(event) {
@@ -13,4 +14,22 @@ function handleMouseMove(event) {
 
 function updateShadow(element, x, y) {
   element.style.textShadow = `${x}px ${y}px var(--shadow-main)`
+}
+function toggleNav(){
+  if (!navOpen){
+    openNav();
+  } else {
+    closeNav();
+  }
+}
+
+function openNav() {
+  document.getElementById('mySidenav').style.left = "0px";
+  document.getElementById('sidenav-tab').style.left = "250px";
+  navOpen = true;
+}
+function closeNav() {
+  document.getElementById('mySidenav').style.left = "-250px";
+  document.getElementById('sidenav-tab').style.left = "0px";
+  navOpen = false;
 }

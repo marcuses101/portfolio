@@ -45,6 +45,7 @@ footer h3 {
     text-shadow: none;
 }
 
+
 /* headings style */
 
 h1, h2, h3 {
@@ -94,6 +95,11 @@ h4 {
 
 #intro .container {
     flex-direction: column-reverse;
+}
+#nav .container {
+    width: 100%;
+    flex-direction: row;
+    justify-content: left;
 }
 
 .item {
@@ -145,6 +151,9 @@ ul, ol {
     display: table;
     margin: 10px auto;
 }
+li {
+    margin: 5px;
+}
 /* Button styles */
 
     .btn {
@@ -157,7 +166,7 @@ ul, ol {
         transition-duration: 25ms;
     }
     .btn:hover {
-        transform: scale(1.01)
+        padding: 5.5px
     }
     .btn:active {
         box-shadow: 1px 1px var(--shadow-main);
@@ -188,7 +197,6 @@ a:active{
 nav {
     width: 90%;
     margin: auto;
-    padding: 10px;
 }
 nav a{
     margin: 5px;
