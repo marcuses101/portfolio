@@ -36,6 +36,14 @@ main {
     width: 95%;
 }
 
+footer h3 {
+    padding: 20px;
+    font-size: 15px;
+    -webkit-text-fill-color: var(--shadow-main);
+    -webkit-text-stroke-width: var(--shadow-main);
+    -webkit-text-stroke-color: var(--shadow-main);
+    text-shadow: none;
+}
 
 /* headings style */
 
@@ -67,6 +75,7 @@ h3 {
     font-size: 40px;
 }
 h4 {
+    color: var(--secondary);
     font-size: 1.75em;
     margin: 5px auto;
     text-align: center;
@@ -124,12 +133,17 @@ article img {
     width: 100%;
 }
 
+.project a {
+    display: block;
+    text-align: center;
+}
+
 
 /* Centered list */
 
 ul, ol {
     display: table;
-    margin: 5px auto;
+    margin: 10px auto;
 }
 /* Button styles */
 
@@ -175,13 +189,10 @@ nav {
     width: 90%;
     margin: auto;
     padding: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 nav a{
     margin: 5px;
-    flex-flow: wrap;
+    text-align: center;
 }
 hr {
     height: 5px;
@@ -202,6 +213,20 @@ hr {
     height:   1px;
     overflow: hidden;
   }
+
+  form {
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+  }
+
+  form > * {
+      margin: 5px;
+  }
+  
+  textarea {
+      resize: none;
+  }
       
 @media all and (min-width: 750px), (orientation: landscape){
 
@@ -209,10 +234,29 @@ hr {
         width: 60%;
     }
 
+    hr {
+        display: none;
+    }
+
+    footer h3 {
+        font-size: 30px;
+    }
+
     .container {
         flex-direction: row;
     }
-          
+
+    nav.container {
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+    nav.container a {
+        width: 70%;
+        margin: 10px auto;
+        flex: 1;
+    }
+   
     #intro .container {
             flex-direction: row;
           }
