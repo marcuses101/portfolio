@@ -44,7 +44,9 @@ footer h3 {
     text-shadow: none;
 }
 
-
+img {
+    width: 100%;
+}
 /* headings style */
 
 h1, h2, h3 {
