@@ -117,6 +117,50 @@ p {
     text-align:center;
 }
 
+/* The side navigation menu */
+.sidenav {
+    height: 100%; 
+    width: 250px; 
+    position: fixed; 
+    z-index: 1;
+    top: 0; 
+    left: -250px;
+    background-color:var(--main); 
+    border: 3px solid var(--secondary);
+    border-radius: 0 5px 5px 0;
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+
+  #sidenav-tab {
+      font-size: 20px;
+      position: fixed;
+      top: 70px;
+      left: 0px;
+      border-left-width: 0px;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      box-shadow: none;
+      transition-duration: 0.5s;
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    color: var(--secondary);
+    margin: 5px;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: var(--shadow-main);
+  }
+  
+
 /* Section cards */
 
 section {
