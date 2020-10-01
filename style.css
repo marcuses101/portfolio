@@ -114,25 +114,33 @@ h5 {
     align-self: center;
 }
 
-p { 
+p {
     font-size: 18px;
     text-align:center;
 }
 
 /* The side navigation menu */
 .sidenav {
-    height: 100%; 
-    width: 250px; 
-    position: fixed; 
+    height: 100%;
+    width: 250px;
+    position: fixed;
     z-index: 1;
-    top: 0; 
+    top: 0;
     left: -250px;
-    background-color:var(--main); 
+    background-color:var(--main);
     border: 3px solid var(--secondary);
     border-radius: 0 5px 5px 0;
-    overflow-x: hidden; 
-    padding-top: 60px; 
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.1s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+
+ .stick #large-nav {
+      position: fixed;
+      top: 0;
+      width: 99%;
+      left: 0.5%;
+      box-shadow: 3px 3px rgba(0, 0, 0, 0.1)
   }
 
   #sidenav-tab {
@@ -144,9 +152,9 @@ p {
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
       box-shadow: none;
-      transition-duration: 0.5s;
+      transition-duration: 0.1s;
   }
-  
+
   /* The navigation menu links */
   .sidenav a {
     color: var(--secondary);
@@ -157,11 +165,11 @@ p {
     display: block;
     transition: 0.3s;
   }
-  
+
   .sidenav a:hover {
     color: var(--shadow-main);
   }
-  
+
 
 /* Section cards */
 
@@ -205,7 +213,7 @@ li {
 /* Button styles */
 
     .btn {
-        cursor: pointer;    
+        cursor: pointer;
         border: 2px solid var(--secondary);
         background-color: var(--main);
         border-radius: 5px;
@@ -279,11 +287,11 @@ hr {
   form > * {
       margin: 5px;
   }
-  
+
   textarea {
       resize: none;
   }
-      
+
 @media all and (min-width: 750px), (orientation: landscape){
 
     h3 {
@@ -313,14 +321,14 @@ hr {
     header nav {
         width: 100%;
     }
-   
+
     #intro .container {
             flex-direction: row;
           }
     #projects .container {
         flex-direction: row;
     }
-      
+
     main {
         width: 80%;
     }
