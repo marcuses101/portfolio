@@ -135,13 +135,6 @@ p {
     transition: 0.1s; /* 0.5 second transition effect to slide in the sidenav */
   }
 
- .stick #large-nav {
-      position: fixed;
-      top: 0;
-      width: 99%;
-      left: 0.5%;
-      box-shadow: 3px 3px rgba(0, 0, 0, 0.1)
-  }
 
   #sidenav-tab {
       font-size: 20px;

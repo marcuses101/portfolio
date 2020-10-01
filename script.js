@@ -1,9 +1,6 @@
 // Added a fun mousemove shadow effect
 
 const titles = document.querySelectorAll(".title");
-const stickyNav = document.querySelector("#large-nav");
-const navTop = stickyNav.offsetTop;
-const navHeight = stickyNav.offsetHeight;
 const walk = 2;
 let navOpen = false;
 
@@ -18,19 +15,6 @@ function toggleNav() {
   }
 }
 
-function stickNav() {
-  if (window.innerWidth > 750){
-    console.log(navHeight)
-  if (navTop <= window.scrollY) {
-    document.querySelector("main").style.paddingTop = navHeight+"px";
-    document.body.classList.add("stick");
-  } else {
-    document.querySelector("main").style.paddingTop = 0;
-    document.body.classList.remove("stick");
-  }
-}}
-
-window.addEventListener("scroll", stickNav);
 
 function clear(e) {
   console.log("Hello World");
