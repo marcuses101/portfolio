@@ -24,12 +24,23 @@ body {
     color: var(--text-secondary);
 }
 
-header, footer{
+header, footer, #large-nav{
     background-color: var(--secondary);
     border-radius: 5px;
     margin: 10px auto;
     width: 99%;
 }
+header{
+    margin-bottom: 0;
+    border-radius: 5px 5px 0 0;
+}
+
+#large-nav {
+    margin-top: 0;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.1)
+}
+
 main {
     margin: auto;
     width: 95%;
@@ -68,6 +79,7 @@ h2 {
 }
 h2.title {
     font-size: 40px;
+    margin-bottom: 0;
 }
 h3 {
     width: 95%;
@@ -84,6 +96,10 @@ h4,h5 {
 }
 h5 {
     font-size: 1.5em;
+}
+
+section h3 {
+    padding: 5px;
 }
 
 .hide-on-small {
@@ -172,6 +188,7 @@ section {
     box-shadow: 2px 2px var(--shadow-main);
     border-radius: 5px;
     margin: 10px;
+
 }
 #projects .container {
     margin: auto;
@@ -237,7 +254,7 @@ a:visited{
 }
 a:hover {
     cursor: pointer;
-    color:  purple;
+    color:  red;
 }
 a:active{
     color: black;
@@ -295,6 +312,9 @@ hr {
         display: none;
     }
 
+    section {
+        scroll-margin-top: 67px;
+    }
 
     .container {
         flex-direction: row;
