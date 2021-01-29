@@ -40,8 +40,6 @@ function closeNav() {
 
 let hsla = 0;
 function handleMouseMove(event) {
-  hsla+= 0.1;
-  document.documentElement.style.setProperty('--shadow-main',`hsla(${hsla},80%,50%,1)`)
   let x =
     ((window.innerWidth / 2 - event.clientX) / (window.innerWidth / 2)) * walk;
   titles.forEach((title) => {
