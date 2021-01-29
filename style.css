@@ -199,6 +199,11 @@ section {
     margin: auto;
     width: 90%;
     flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#projects article {
+    max-width: 50%;
 }
 
 article {
