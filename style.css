@@ -202,14 +202,22 @@ section {
     justify-content: center;
     flex-wrap: wrap;
 }
+.featured-project{
+    width:90%;
+    margin:auto;
+}
 
 .featured-project .featured-content {
+    margin:10px;
     display: grid;
     grid-template-columns: 1fr;
 }
-.featured-content p{
-    text-align: left;
+.featured-project a{
+    display: block;
+    margin: auto;
+    max-width: 800px;
 }
+
 .featured-content a {
     display:block;
     text-align: center;
