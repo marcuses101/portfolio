@@ -54,9 +54,10 @@ main {
 footer h3 {
     padding: 20px;
     font-size: 15px;
-    -webkit-text-fill-color: var(--main);
-    -webkit-text-stroke-width: var(--main);
-    -webkit-text-stroke-color: var(--main);
+    color: var(--main);
+    -webkit-text-fill-color: unset;
+    -webkit-text-stroke-width: unset;
+    -webkit-text-stroke-color: unset;
     text-shadow: none;
 }
 
