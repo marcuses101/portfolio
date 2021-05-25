@@ -68,6 +68,7 @@ img {
 
 h1, h2, h3 {
     margin: 5px;
+    color: var(--main);
     -webkit-text-fill-color: var(--main);
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
