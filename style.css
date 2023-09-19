@@ -109,6 +109,7 @@ h5 {
 
 .section-title {
     margin-block-end: 1rem;
+    padding-block: 4px;
 }
 
 .hide-on-small {
