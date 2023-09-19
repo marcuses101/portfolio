@@ -198,7 +198,7 @@ section {
     border: 3px solid var(--secondary);
     box-shadow: 2px 2px var(--shadow-main);
     border-radius: 5px;
-    margin: 4rem;
+    margin-block: 4rem;
     padding: 1rem;
 
 }
