@@ -16,6 +16,8 @@ html {
     --main:#edf2f4;
     --secondary: #2b2d42;
     --shadow-main: hsla(0,80%,50%,1);
+    --shadow-x: 2px;
+    --shadow-y: 2px;
 }
 
 body {
@@ -72,7 +74,7 @@ h1, h2, h3 {
     -webkit-text-fill-color: var(--main);
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
-    text-shadow: 2px 2px var(--shadow-main);
+    text-shadow: var(--shadow-x) var(--shadow-y) var(--shadow-main);
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     transition-duration: 50ms;
@@ -105,8 +107,8 @@ h5 {
     font-size: 1.5em;
 }
 
-section h3 {
-    padding: 5px;
+.section-title {
+    margin-block-end: 1rem;
 }
 
 .hide-on-small {
@@ -119,6 +121,8 @@ section h3 {
     display: flex;
     flex-direction: column;
 }
+
+
 
 #intro .container {
     flex-direction: column-reverse;
@@ -156,23 +160,23 @@ p {
     overflow-x: hidden;
     padding-top: 60px;
     transition: 0.1s; /* 0.5 second transition effect to slide in the sidenav */
-  }
+}
 
 
-  #sidenav-tab {
-      font-size: 20px;
-      position: fixed;
-      top: 70px;
-      left: 0px;
-      border-left-width: 0px;
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0;
-      box-shadow: none;
-      transition-duration: 0.1s;
-  }
+#sidenav-tab {
+    font-size: 20px;
+    position: fixed;
+    top: 70px;
+    left: 0px;
+    border-left-width: 0px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    box-shadow: none;
+    transition-duration: 0.1s;
+}
 
-  /* The navigation menu links */
-  .sidenav a {
+/* The navigation menu links */
+.sidenav a {
     color: var(--secondary);
     margin: 5px;
     padding: 5px;
@@ -180,11 +184,11 @@ p {
     font-size: 25px;
     display: block;
     transition: 0.3s;
-  }
+}
 
-  .sidenav a:hover {
+.sidenav a:hover {
     color: var(--shadow-main);
-  }
+}
 
 
 /* Section cards */
@@ -194,7 +198,8 @@ section {
     border: 3px solid var(--secondary);
     box-shadow: 2px 2px var(--shadow-main);
     border-radius: 5px;
-    margin: 10px;
+    margin: 4rem;
+    padding: 1rem;
 
 }
 #projects .container {
@@ -210,7 +215,7 @@ section {
 }
 
 .featured-project .featured-content {
-    margin:10px;
+    margin: 2rem;
     display: grid;
     grid-template-columns: 1fr;
 }
@@ -262,7 +267,7 @@ ul.skills-list span {
     width: 200px;
 }
 ul.skills-list img{
-width: auto
+    width: auto
 }
 
 li {
@@ -270,22 +275,22 @@ li {
 }
 /* Button styles */
 
-    .btn {
-        cursor: pointer;
-        border: 2px solid var(--secondary);
-        background-color: var(--main);
-        border-radius: 5px;
-        box-shadow: 2px 2px var(--shadow-main);
-        padding: 5px;
-        transition-duration: 25ms;
-    }
-    .btn:hover {
-        transform: scale(1.01);
-    }
-    .btn:active {
-        box-shadow: 1px 1px var(--shadow-main);
-        transform: translate(2px,2px)
-    }
+.btn {
+    cursor: pointer;
+    border: 2px solid var(--secondary);
+    background-color: var(--main);
+    border-radius: 5px;
+    box-shadow: var(--shadow-x) 2px var(--shadow-main);
+    padding: 5px;
+    transition-duration: 25ms;
+}
+.btn:hover {
+    transform: scale(1.01);
+}
+.btn:active {
+    box-shadow: 1px 1px var(--shadow-main);
+    transform: translate(2px,2px)
+}
 
 /* Link styles */
 
@@ -317,6 +322,7 @@ nav a{
     text-align: center;
 }
 hr {
+    margin-block: 2rem;
     height: 5px;
     background-color: var(--secondary);
     border: 1px solid var(--secondary);
@@ -334,24 +340,24 @@ hr {
     width:    1px;
     height:   1px;
     overflow: hidden;
-  }
+}
 
-  form {
-      margin: auto;
-      display: flex;
-      flex-direction: column;
-  }
+form {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
 
-  form > * {
-      margin: 5px;
-  }
+form > * {
+    margin: 5px;
+}
 
-  textarea {
-      resize: none;
-  }
+textarea {
+    resize: none;
+}
 
 @media all and (min-width: 750px), (orientation: landscape){
-   .featured-project .featured-content {
+    .featured-project .featured-content {
         grid-template-columns: 1.618fr 1fr;
     }
     h3 {
@@ -365,7 +371,7 @@ hr {
     section {
         scroll-margin-top: 67px;
     }
-/* Test */
+    /* Test */
     .container {
         flex-direction: row;
     }
@@ -386,8 +392,8 @@ hr {
     }
 
     #intro .container {
-            flex-direction: row;
-          }
+        flex-direction: row;
+    }
     #projects .container {
         flex-direction: row;
     }

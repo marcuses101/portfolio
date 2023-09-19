@@ -1,17 +1,7 @@
-// Added a fun mousemove shadow effect
+const WALK = 2;
 
-const titles = document.querySelectorAll(".title");
-const fixedLinks = document.querySelectorAll('#large-nav a');
-const walk = 2;
+const root = document.querySelector(":root");
 let navOpen = false;
-
-function updateTextShadow(element, x, y) {
-  element.style.textShadow = `${x}px ${y}px var(--shadow-main)`;
-}
-
-function updateBoxShadow(element, x, y) {
-  element.style.boxShadow = `${x}px ${y}px var(--shadow-main)`;
-}
 
 function toggleNav() {
   if (!navOpen) {
@@ -19,12 +9,6 @@ function toggleNav() {
   } else {
     closeNav();
   }
-}
-
-
-function clear(e) {
-  console.log("Hello World");
-  e.reset();
 }
 
 function openNav() {
@@ -38,20 +22,13 @@ function closeNav() {
   navOpen = false;
 }
 
-let hsla = 0;
 function handleMouseMove(event) {
   let x =
-    ((window.innerWidth / 2 - event.clientX) / (window.innerWidth / 2)) * walk;
-  titles.forEach((title) => {
-    updateTextShadow(title, x.toFixed(2), 1.5);
-  });
-  fixedLinks.forEach(link=>{
-    updateBoxShadow(link, x.toFixed(2),2);
-  })
+    ((window.innerWidth / 2 - event.clientX) / (window.innerWidth / 2)) * WALK;
+  root.style.setProperty("--shadow-x", `${x}px`);
 }
 
 //enable mousemove effect on desktop
-
 if (window.innerWidth >= 750) {
   window.addEventListener("mousemove", handleMouseMove);
 }

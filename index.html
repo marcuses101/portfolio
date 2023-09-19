@@ -1,425 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-      type="text/css"
-    />
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        type="text/css" />
     <link rel="stylesheet" href="style.css" type="text/css" />
     <link rel="icon" type="image/png" href="img/favicon.ico" />
-    <meta name="keywords" content="HTML, CSS, JavaScript, Node" />
-    <meta
-      name="description"
-      content="Marcus Connolly - Web developer portfolio"
-    />
+    <meta name="keywords" content="React, TypeScript, Javascript, Node, SQL" />
+    <meta name="description" content="Marcus Connolly - Software Developer Portfolio" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Facebook meta tags-->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://marcus-connolly.com/" />
     <meta property="og:title" content="Marcus Connolly Developer" />
-    <meta
-      property="og:description"
-      content="Marcus Connolly - Web developer portfolio"
-    />
+    <meta property="og:description" content="Marcus Connolly - Software Developer Portfolio" />
     <meta property="og:image" content="img/facebook-screen.png" />
+    <script defer src="script.js"></script>
+    <script async src="https://kit.fontawesome.com/5b5a5f1400.js" crossorigin="anonymous"></script>
     <title>Marcus Connolly Developer</title>
-  </head>
+</head>
 
-  <body>
-    <span id="sidenav-tab" class="btn hide-on-large" onclick="toggleNav()"
-      >☰</span
-    >
+<body>
+    <span id="sidenav-tab" class="btn hide-on-large" onclick="toggleNav()">☰</span>
     <nav id="mySidenav" class="sidenav">
-      <a href="#intro" class="btn" onclick="closeNav()">Intro</a>
-      <a href="#aboutMe" class="btn" onclick="closeNav()">About</a>
-      <a href="#projects" class="btn" onclick="closeNav()">Projects</a>
-      <a href="#skills" class="btn" onclick="closeNav()">Skills</a>
-      <a href="#contact-info" class="btn" onclick="closeNav()">Contact</a>
+        <a href="#intro" class="btn" onclick="closeNav()">Intro</a>
+        <a href="#aboutMe" class="btn" onclick="closeNav()">About</a>
+        <a href="#projects" class="btn" onclick="closeNav()">Projects</a>
+        <a href="#skills" class="btn" onclick="closeNav()">Skills</a>
+        <a href="#contact-info" class="btn" onclick="closeNav()">Contact</a>
     </nav>
 
     <header>
-      <h1 class="title">Marcus <span class="hide-on-small">Connolly</span></h1>
-      <h2 class="title"><span class="hide-on-small">Web </span>Developer</h2>
+        <h1 class="title">Marcus <span class="hide-on-small">Connolly</span></h1>
+        <h2 class="title"><span class="hide-on-small">Software </span>Developer</h2>
     </header>
-    <nav
-      id="large-nav"
-      class="hide-on-small"
-      style="position: sticky; top: 0; z-index: 1"
-    >
-      <a href="#intro" class="btn">Intro</a>
-      <a href="#aboutMe" class="btn">About</a>
-      <a href="#projects" class="btn">Projects</a>
-      <a href="#skills" class="btn">Skills</a>
-      <a href="#contact-info" class="btn">Contact</a>
+    <nav id="large-nav" class="hide-on-small" style="position: sticky; top: 0; z-index: 1">
+        <a href="#intro" class="btn">Intro</a>
+        <a href="#aboutMe" class="btn">About</a>
+        <a href="#projects" class="btn">Projects</a>
+        <a href="#skills" class="btn">Skills</a>
+        <a href="#contact-info" class="btn">Contact</a>
     </nav>
 
     <main>
-      <section id="intro">
-        <h3 class="visually-hidden">Intro</h3>
-        <!--Section heading for accessibility-->
+        <section id="intro">
+            <h3 class="visually-hidden">Intro</h3>
+            <!--Section heading for accessibility-->
 
-        <div class="container">
-          <div class="item align-vert">
-            <p>
-              I'm Marcus. Developer by day, figure skating coach by night. Based
-              out of Montreal, Quebec.
-            </p>
-            <p>
-              I like building tools and systems: Helping people focus on the
-              parts of their jobs they love.
-            </p>
-          </div>
-          <div class="item">
-            <img
-              src="img/marcus.jpg"
-              alt="30 year old man, closely trimmed hair."
-            />
-          </div>
-        </div>
-      </section>
-
-      <section id="aboutMe">
-        <h3>About Me</h3>
-        <div class="container">
-          <div class="item">
-            <p>
-              I've been a figure skating coach for the past 15 years, and a
-              figure skater since I could walk.
-            </p>
-            <p>
-              Now my brain is ready for a new challenge. I'm diving into the
-              world of web development.
-            </p>
-            <p>
-              I look forward to working with a team of dedicated professionals!
-            </p>
-          </div>
-          <hr />
-          <div class="item">
-            <h4>Services Available:</h4>
-            <ul>
-              <li>Custom Web Applications</li>
-              <li>Full Stack Development</li>
-              <li>Unique Website Design</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section id="projects">
-        <h3>Projects</h3>
-        <article class="featured-project">
-          <h4>
-            <a href="https://canskate.vercel.app" target="_blank" rel="noopener"
-              >CanSkate App</a
-            >
-          </h4>
-          <a href="https://canskate.vercel.app" target="_blank" rel="noopener"
-            ><img src="/img/canskate.gif" alt="CanSkate App interface"
-          /></a>
-          <div class="featured-content">
-            <div class="description">
-              <h5>Description</h5>
-              <p>
-                There are A LOT of things to track when organizing a
-                <a
-                  href="https://skatecanada.ca/learn-to-skate/canskate/"
-                  style="display: inline"
-                  >CanSkate Program.</a
-                >
-                Sessions, groups, skaters, badges, categories, dates, etc. This
-                web app aims to automate as many of the repetitive tasks as
-                possible, allowing coaches to focus on what really matters:
-                helping their students improve.
-              </p>
+            <div class="container">
+                <div class="item align-vert">
+                    <p>
+                        Hi, I'm Marcus, a software developer, driven by his
+                        insatiable curiosity, and passion for helping people overcome challenges. Whether it's tackling
+                        Typescript, React, Sql, or Rust. I'm here to create solutions that make your life easier.
+                    </p>
+                </div>
+                <div class="item">
+                    <img src="img/marcus.jpg" alt="30 year old man, closely trimmed hair." />
+                </div>
             </div>
+        </section>
 
-            <div class="skills">
-              <h5>Skills</h5>
-              <ul>
-                <li>React</li>
-                <li>HTML5</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Node/Express</li>
-              </ul>
-              <a
-                href="https://github.com/marcuses101/canskate/"
-                target="_blank"
-                rel="noopener"
-                >Source Code(Frontend)</a
-              >
-              <a
-                href="https://github.com/marcuses101/canskate-server/"
-                target="_blank"
-                rel="noopener"
-                >Source Code(Server)</a
-              >
+        <section id="aboutMe">
+            <h3 class="section-title">About Me</h3>
+            <div class="container">
+                <div class="item">
+                    <p>
+                        I've been a figure skating coach for the past 15 years, and a
+                        figure skater since I could walk.
+                    </p>
+                    <p>
+                        Now my brain is ready for a new challenge. I'm diving into the
+                        world of web development.
+                    </p>
+                    <p>
+                        I look forward to working with a team of dedicated professionals!
+                    </p>
+                </div>
+                <hr />
+                <div class="item">
+                    <h4>Services Available:</h4>
+                    <ul>
+                        <li>Custom Web Applications</li>
+                        <li>Full Stack Development</li>
+                        <li>Unique Website Design</li>
+                    </ul>
+                </div>
             </div>
-          </div>
-        </article>
-        <hr class="hide-on-small" style="display: block" />
+        </section>
 
-        <div class="container">
-          <article class="project">
-            <h4>
-              <a
-                href="https://production-assistant.vercel.app/"
-                target="_blank"
-                rel="noopener"
-                >Production Assistant</a
-              >
-            </h4>
-            <a
-              href="https://production-assistant.vercel.app/"
-              target="_blank"
-              rel="noopener"
-              ><img
-                src="img/frontend-screen.png"
-                alt="production-assistant dashboard screenshot"
-            /></a>
-            <p>Application for organizing film production</p>
-            <h5>Skills</h5>
-              <ul>
-                <li>React</li>
-                <li>HTML5</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Node/Express</li>
-              </ul>
-            <a
-              href="https://github.com/marcuses101/Production-Assistant-Frontend"
-              target="_blank"
-              rel="noopener"
-              >Source Code (frontend)</a
-            >
-            <a
-              href="https://github.com/marcuses101/Production-Assistant-Server"
-              target="_blank"
-              rel="noopener"
-              >Source Code (server)</a
-            >
-          </article>
-          <article class="project">
-            <h4>
-              <a
-                href="https://marcuses101.github.io/dad-jokes/"
-                target="_blank"
-                rel="noopener"
-                >Dad Joke DB</a
-              >
-            </h4>
-            <a
-              href="https://marcuses101.github.io/dad-jokes/"
-              target="_blank"
-              rel="noopener"
-            >
-              <img
-                src="img/DJDB-screen6.png"
-                alt="screenshot of Dad Joke DB website"
-              />
-            </a>
-            <p>
-              Here you will find dad jokes paired with top notch clip art
-              selected with the help of machine learning
-            </p>
+        <section id="projects">
+            <h3 class="section-title">Projects</h3>
+            <article class="featured-project">
+                <h4>
+                    <a href="https://canskate.vercel.app" target="_blank" rel="noopener">CanSkate App</a>
+                </h4>
+                <a href="https://canskate.vercel.app" target="_blank" rel="noopener"><img src="/img/canskate.gif"
+                        alt="CanSkate App interface" /></a>
+                <div class="featured-content">
+                    <div class="description">
+                        <h5>Description</h5>
+                        <p>
+                            There are A LOT of things to track when organizing a
+                            <a href="https://skatecanada.ca/learn-to-skate/canskate/" style="display: inline">
+                                CanSkate Program.
+                            </a>
+                            Sessions, groups, skaters, badges, categories, dates, etc. This
+                            web app aims to automate as many of the repetitive tasks as
+                            possible, allowing coaches to focus on what really matters:
+                            helping their students improve.
+                        </p>
+                    </div>
 
-            <h5>Skills</h5>
-            <ul>
-              <li>HTML5</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>Node/Express</li>
-              <li>JQuery</li>
+                    <div class="skills">
+                        <h5>Skills</h5>
+                        <ul>
+                            <li>React</li>
+                            <li>HTML5</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Node/Express</li>
+                        </ul>
+                        <a href="https://github.com/marcuses101/canskate/" target="_blank" rel="noopener">Source
+                            Code(Frontend)</a>
+                        <a href="https://github.com/marcuses101/canskate-server/" target="_blank" rel="noopener">Source
+                            Code(Server)</a>
+                    </div>
+                </div>
+            </article>
+            <hr class="hide-on-small" style="display: block" />
+
+            <div class="container">
+                <article class="project">
+                    <h4>
+                        <a href="https://production-assistant.vercel.app/" target="_blank" rel="noopener">Svelte of Life</a>
+                    </h4>
+                    <a href="https://marcuses101.github.io/svelte-of-life/" target="_blank" rel="noopener">
+                        <img src="https://raw.githubusercontent.com/marcuses101/svelte-of-life/main/svelte-of-life_screen.png" alt="production-assistant dashboard screenshot" />
+                    </a>
+                    <p>A Svelte implementation of Conway's Game of Life.</p>
+                    <h5>Skills</h5>
+                    <ul>
+                        <li>Typescript</li>
+                        <li>Svelte</li>
+                        <li>HTML5</li>
+                        <li>CSS</li>
+                    </ul>
+                    <a href="https://github.com/marcuses101/svelte-of-life" target="_blank"
+                        rel="noopener">Source Code</a>
+                </article>
+                <article class="project">
+                    <h4>
+                        <a href="https://marcuses101.github.io/dad-jokes/" target="_blank" rel="noopener">Dad Joke
+                            DB</a>
+                    </h4>
+                    <a href="https://marcuses101.github.io/dad-jokes/" target="_blank" rel="noopener">
+                        <img src="img/DJDB-screen6.png" alt="screenshot of Dad Joke DB website" />
+                    </a>
+                    <p>
+                        Here you will find dad jokes paired with top notch clip art
+                        selected with the help of machine learning
+                    </p>
+
+                    <h5>Skills</h5>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Node/Express</li>
+                        <li>JQuery</li>
+                    </ul>
+                    <a href="https://github.com/marcuses101/dad-jokes/" target="_blank" rel="noopener">Source
+                        Code(Frontend)</a>
+                    <a href="https://github.com/marcuses101/dad-joke-server/" target="_blank" rel="noopener">Source
+                        Code(Server)</a>
+                </article>
+
+                <article class="project">
+                    <h4>
+                        <a href="https://marcuses101.github.io/portfolio/">This Website</a>
+                    </h4>
+                    <a href="https://marcuses101.github.io/portfolio/" target="_blank" rel="noopener">
+                        <img src="img/portfolio.png" alt="Picture of this website" />
+                    </a>
+                    <p>My personal developer portfolio</p>
+                    <p>
+                        Responsive mobile-first accessible design. SEO optimization. Clean
+                        layout.
+                    </p>
+                    <p>Fun mouse move box-shadow effect on title</p>
+                    <h5>Skills</h5>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                    <a href="https://github.com/marcuses101/portfolio" target="_blank" rel="noopener">Source Code</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h3 class="section-title">Skills</h3>
+            <ul class="skills-list">
+                <li><i class="fab fa-react"></i> <span>React.js</span></li>
+                <li><i class="fab fa-js"></i> <span>TypeScript/JavaScript</span></li>
+                <li><i class="fab fa-html5"></i> <span>HTML5</span></li>
+                <li><i class="fab fa-css3"></i> <span>CSS</span></li>
+                <li><i class="fab fa-node-js"></i> <span>Node</span></li>
+                <li>
+                    <img src="https://user-images.githubusercontent.com/11978772/40430986-a0eb7b92-5e63-11e8-80eb-43fe07f664a6.png"
+                        style="height: 16px; position: relative; left: -7.5px" alt='express icon' /><span>Express</span>
+                </li>
+                <li>
+                    <i class="fa-solid fa-database"></i><span>SQL</span>
+                </li>
+                <li><i class="fab fa-git-alt"></i><span>Git</span></li>
+                <li>
+                    <i class="fab fa-google"></i><span>Google Cloud Platform</span>
+                </li>
             </ul>
-            <a
-              href="https://github.com/marcuses101/dad-jokes/"
-              target="_blank"
-              rel="noopener"
-              >Source Code(Frontend)</a
-            >
-            <a
-              href="https://github.com/marcuses101/dad-joke-server/"
-              target="_blank"
-              rel="noopener"
-              >Source Code(Server)</a
-            >
-          </article>
+        </section>
 
-
-
-          <article class="project">
-            <h4>
-              <a
-                href="https://marcuses101.github.io/FS101-quiz/"
-                target="_blank"
-                rel="noopener"
-                >Quiz App</a
-              >
-            </h4>
-            <a
-              href="https://marcuses101.github.io/FS101-quiz/"
-              target="_blank"
-              rel="noopener"
-              ><img src="img/quiz.png" alt="8-bit quiz screenshot"
-            /></a>
-            <p>
-              Fun 8-bit quiz application built using the MVC design pattern.
-            </p>
-            <h5>Skills</h5>
-            <ul>
-              <li>HTML5</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>JQuery</li>
-            </ul>
-            <a
-              href="https://github.com/marcuses101/FS101-quiz"
-              target="_blank"
-              rel="noopener"
-              >Source Code</a
-            >
-          </article>
-
-          <article class="project">
-            <h4>
-              <a href="https://marcuses101.github.io/portfolio/"
-                >This Website</a
-              >
-            </h4>
-            <a
-              href="https://marcuses101.github.io/portfolio/"
-              target="_blank"
-              rel="noopener"
-            >
-              <img src="img/portfolio.png" alt="Picture of this website" />
-            </a>
-            <p>My personal developer portfolio</p>
-            <p>
-              Responsive mobile-first accessible design. SEO optimization. Clean
-              layout.
-            </p>
-            <p>Fun mouse move box-shadow effect on title</p>
-            <h5>Skills</h5>
-            <ul>
-              <li>HTML5</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-            </ul>
-            <a
-              href="https://github.com/marcuses101/portfolio"
-              target="_blank"
-              rel="noopener"
-              >Source Code</a
-            >
-          </article>
-        </div>
-      </section>
-
-      <section id="skills">
-        <h3>Skills</h3>
-        <ul class="skills-list">
-          <li><i class="fab fa-js"></i> <span>JavaScript</span></li>
-          <li><i class="fab fa-html5"></i> <span>HTML5</span></li>
-          <li><i class="fab fa-css3"></i> <span>CSS</span></li>
-          <li><i class="fab fa-react"></i> <span>React.js</span></li>
-          <li><i class="fab fa-node-js"></i> <span>Node</span></li>
-          <li>
-            <img
-              src="https://user-images.githubusercontent.com/11978772/40430986-a0eb7b92-5e63-11e8-80eb-43fe07f664a6.png"
-              style="height: 16px; position: relative; left: -7.5px"
-              alt='express icon'
-            /><span>Express</span>
-          </li>
-          <li><i class="fab fa-git-alt"></i><span>Git</span></li>
-          <li>
-            <img
-              src="./jquery.png"
-              style="height: 20px; left: -3.5px; position: relative"
-              alt='JQuery icon'
-            /><span>JQuery</span>
-          </li>
-          <li>
-            <i class="fab fa-google"></i><span>Google Cloud Platform</span>
-          </li>
-        </ul>
-      </section>
-
-      <section id="contact-info">
-        <h3>Contact Info</h3>
-        <div class="container">
-          <div class="item">
-            <p>
-              Please fill in the form below if you would like further
-              information.
-            </p>
-            <hr style="display: block" />
-            <form
-              action="https://formspree.io/xnqgejdk"
-              method="POST"
-              target="_blank"
-              rel="noopener"
-            >
-              <label for="fname">First Name:</label>
-              <input type="text" id="fname" name="fname" required /><br />
-              <label for="lname">Last Name:</label>
-              <input type="text" id="lname" name="lname" required /><br />
-              <label for="email">Email:</label>
-              <input type="email" name="email" id="email" required /><br />
-              <label for="inquiry">Inquiry:</label>
-              <textarea
-                name="inquiry"
-                id="inquiry"
-                rows="10"
-                required
-              ></textarea
-              ><br />
-              <input class="btn" type="submit" value="Submit" />
-            </form>
-          </div>
-          <hr />
-          <div class="item">
-            <h4>Contact Links:</h4>
-            <nav class="container">
-              <a class="btn" href="./marcus-connolly-resume.pdf" target="_blank"
-                >Resume</a
-              >
-              <a
-                class="btn"
-                href="https://www.linkedin.com/in/marcus-connolly-web/"
-                target="_blank"
-                rel="noopener"
-                >LinkedIn</a
-              >
-              <a
-                class="btn"
-                href="https://github.com/marcuses101/"
-                target="_blank"
-                rel="noopener"
-                >GitHub</a
-              >
-              <a
-                class="btn"
-                href="mailto:mnjconnolly@gmail.com"
-                target="_blank"
-                rel="noopener"
-                >✉ Email</a
-              >
-            </nav>
-          </div>
-        </div>
-      </section>
+        <section id="contact-info">
+            <h3 class="section-title">Contact Info</h3>
+            <div class="container">
+                <div class="item">
+                    <p>
+                        Please fill in the form below if you would like further
+                        information.
+                    </p>
+                    <hr style="display: block" />
+                    <form action="https://formspree.io/xnqgejdk" method="POST" target="_blank" rel="noopener">
+                        <label for="fname">First Name:</label>
+                        <input type="text" id="fname" name="fname" required /><br />
+                        <label for="lname">Last Name:</label>
+                        <input type="text" id="lname" name="lname" required /><br />
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" required /><br />
+                        <label for="inquiry">Inquiry:</label>
+                        <textarea name="inquiry" id="inquiry" rows="10" required></textarea><br />
+                        <input class="btn" type="submit" value="Submit" />
+                    </form>
+                </div>
+                <hr />
+                <div class="item">
+                    <h4>Contact Links:</h4>
+                    <nav class="container">
+                        <a class="btn" href="./marcus-connolly-resume_v2.pdf" target="_blank">Resume</a>
+                        <a class="btn" href="https://www.linkedin.com/in/marcus-connolly-web/" target="_blank"
+                            rel="noopener">LinkedIn</a>
+                        <a class="btn" href="https://github.com/marcuses101/" target="_blank" rel="noopener">GitHub</a>
+                        <a class="btn" href="mailto:mnjconnolly@gmail.com" target="_blank" rel="noopener">✉ Email</a>
+                    </nav>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
-      <h3>Copyright Marcus Connolly 2021</h3>
+        <h3>Copyright Marcus Connolly 2023</h3>
     </footer>
-    <script
-      src="https://kit.fontawesome.com/5b5a5f1400.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="script.js"></script>
-  </body>
+
+</body>
+
 </html>
