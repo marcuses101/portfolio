@@ -440,6 +440,9 @@ aside {
     display: flex;
     gap: 1rem;
     flex-direction: row;
+    position: sticky;
+    top: 2rem;
+    align-self: start;
 
     >div {
         display: flex;
@@ -463,7 +466,6 @@ aside {
             translate: 6px;
         }
     }
-
 }
 
 footer {
