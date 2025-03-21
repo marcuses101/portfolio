@@ -30,34 +30,41 @@ html {
 }
 
 body {
+    padding:0;
+    margin:0;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     background-color: var(--background);
     color: var(--secondary);
     line-height: 1.6;
-    display: grid;
-    grid-template-columns: 300px 1fr;
-    grid-template-areas:
-        "header header"
-        "intro intro"
-        "aside main"
-        "footer footer";
     overflow-x: hidden;
 }
-body::before {
-  content: "";
-  position: absolute;
-  top: 220px;
-  right:-15%;
-  width: 50%;
-  height: 100%;
-  background:  url('img/Marcus cafe croped_2.jpg');
-  mask-image: linear-gradient(black 0 50%, transparent);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  filter: grayscale(100%);
-  transform: scaleX(-1);
-  z-index: -1;
+main {
+    position: relative;
+    margin-top:6rem;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 50vh;
+    grid-template-areas:
+        "intro intro"
+        "aside main"
+        "aside contact";
+}
+
+.bg-image {
+    position: absolute;
+    top: 4rem;
+    right: 0;
+    width: 50%;
+    z-index: -1;
+    img {
+        width:100%;
+        translate: 25%;
+        mask-image: linear-gradient(black, transparent);
+        mask-size: cover;
+        transform: scaleX(-1);
+        filter:grayscale(1);
+        object-fit:contain;
+    }
 }
 
 header,
@@ -75,6 +82,10 @@ header {
     h1 {
         color: var(--secondary);
     }
+}
+
+#contact-info {
+    grid-area: contact;
 }
 
 
@@ -149,24 +160,12 @@ h5 {
     background-color: var(--accent);
 }
 
-
-
-main {
-    margin: auto;
-    width: 95%;
-    max-width: 1200px;
-}
-
 footer h3 {
     font-size: 1rem;
     color: var(--background);
 }
 
 
-
-img {
-    width: 100%;
-}
 
 /* flex */
 
@@ -178,9 +177,6 @@ img {
 #intro {
     grid-area: intro;
     margin-inline: auto;
-    margin-block-start: 10rem;
-    padding: 1rem 2rem;
-
     div {
         display: flex;
         align-items: center;
@@ -404,17 +400,6 @@ textarea {
     resize: none;
 }
 
-/* Grid Layout */
-.page-container {
-    display: grid;
-    grid-template-areas:
-        "header"
-        "nav"
-        "content"
-        "footer";
-    min-height: 100vh;
-}
-
 header {
     grid-area: header;
     margin: 0;
@@ -440,11 +425,6 @@ nav {
 }
 
 
-main {
-    grid-area: main;
-    width: 100%;
-    max-width: none;
-}
 
 aside {
     height: fit-content;
@@ -493,9 +473,6 @@ footer {
 
 
 @media (max-width: 768px) {
-    .page-container {
-        gap: 1rem;
-    }
 
     header {
         padding: 2rem 1rem;
@@ -551,10 +528,6 @@ footer {
 
     #projects .container {
         flex-direction: row;
-    }
-
-    main {
-        width: 80%;
     }
 
     .hide-on-small {
